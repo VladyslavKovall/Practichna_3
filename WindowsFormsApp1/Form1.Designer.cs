@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtmc = new System.Windows.Forms.TextBox();
+            this.txtspc = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
-            this.txtage = new System.Windows.Forms.TextBox();
-            this.txtprof = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btAdd = new System.Windows.Forms.Button();
             this.txtresult = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
@@ -42,8 +42,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtprof);
-            this.groupBox1.Controls.Add(this.txtage);
+            this.groupBox1.Controls.Add(this.txtmc);
+            this.groupBox1.Controls.Add(this.txtspc);
             this.groupBox1.Controls.Add(this.txtname);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -55,53 +55,53 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Інформація";
             // 
-            // label1
+            // txtmc
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(74, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ім\'я";
+            this.txtmc.Location = new System.Drawing.Point(233, 190);
+            this.txtmc.Name = "txtmc";
+            this.txtmc.Size = new System.Drawing.Size(155, 30);
+            this.txtmc.TabIndex = 5;
             // 
-            // label2
+            // txtspc
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(85, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Вік";
+            this.txtspc.Location = new System.Drawing.Point(233, 108);
+            this.txtspc.Name = "txtspc";
+            this.txtspc.Size = new System.Drawing.Size(155, 30);
+            this.txtspc.TabIndex = 4;
+            // 
+            // txtname
+            // 
+            this.txtname.Location = new System.Drawing.Point(129, 45);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(259, 30);
+            this.txtname.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(20, 190);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 25);
+            this.label3.Size = new System.Drawing.Size(185, 25);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Професія";
+            this.label3.Text = "Кількість медалей";
             // 
-            // txtname
+            // label2
             // 
-            this.txtname.Location = new System.Drawing.Point(129, 45);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(213, 30);
-            this.txtname.TabIndex = 3;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(219, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Кількість спортсменів";
             // 
-            // txtage
+            // label1
             // 
-            this.txtage.Location = new System.Drawing.Point(129, 113);
-            this.txtage.Name = "txtage";
-            this.txtage.Size = new System.Drawing.Size(213, 30);
-            this.txtage.TabIndex = 4;
-            // 
-            // txtprof
-            // 
-            this.txtprof.Location = new System.Drawing.Point(129, 190);
-            this.txtprof.Name = "txtprof";
-            this.txtprof.Size = new System.Drawing.Size(213, 30);
-            this.txtprof.TabIndex = 5;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ім\'я Країни";
             // 
             // btAdd
             // 
@@ -143,8 +143,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtprof;
-        private System.Windows.Forms.TextBox txtage;
+        private System.Windows.Forms.TextBox txtmc;
+        private System.Windows.Forms.TextBox txtspc;
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

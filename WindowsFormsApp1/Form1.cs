@@ -19,36 +19,36 @@ namespace WindowsFormsApp1
 
         private void btAdd_Click(object sender, EventArgs e)
         {
-            Person person = null;
+            CountryMedal countryMedal = null;
             if (txtname.Text == " ")
             {
-                MessageBox.Show("Введіть ім`я");
+                MessageBox.Show("Введіть ім`я Країни");
             }
-            if (txtage.Text != " ")
+            if (txtspc.Text != " ")
             {
-                if (txtprof.Text != " ")
+                if (txtmc.Text != " ")
                 {
-                    person = new Person(txtname.Text, Convert.ToInt32(txtage.Text), txtprof.Text);
+                    countryMedal = new CountryMedal(txtname.Text, Convert.ToInt32(txtspc.Text), Convert.ToInt32(txtmc.Text));
                 }
                 else
                 {
-                   person = new Person(txtname.Text, Convert.ToInt32(txtage.Text));
+                   countryMedal = new CountryMedal(txtname.Text, Convert.ToInt32(txtspc.Text));
                 }
             }
             else
             {
-                if (txtprof.Text != " ")
+                if (txtmc.Text != " ")
                 {
-                    person = new Person(txtname.Text, 0, txtprof.Text);
+                    countryMedal = new CountryMedal(txtname.Text, 0, Convert.ToInt32(txtmc.Text));
                 }
                 else
                 {
-                    person = new Person(txtname.Text);
+                    countryMedal= new CountryMedal(txtname.Text);
                 }
             }
-            if (person != null)
+            if (countryMedal != null)
             {
-                txtresult.Text += person.GetInformation() + "\r\n";
+                txtresult.Text += countryMedal.GetInformation() + "\r\n";
             }
         }
     }

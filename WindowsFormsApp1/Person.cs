@@ -6,31 +6,31 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    internal class Person
+    internal class CountryMedal
     {
-        string name;
-        int age;
-        string proffesion;
+        string CountryName;
+        int SportCount;
+        int MedalCount;
 
-        public Person(string name)
+        public CountryMedal(string countryname)
         {
-            this.name = name;
+            this.CountryName = countryname;
         }
-        public Person(string name, int age)
+        public CountryMedal(string countryname, int sportcount)
         {
-            this.name = name;
-            this.age = age;
+            this.CountryName = countryname;
+            this.SportCount = sportcount;
         }
-        public Person(string name, int age, string proffesion)
+        public CountryMedal(string countryname, int sportcount, int medalcount)
         {
-            this.name = name;
-            this.age = age;
-            this.proffesion = proffesion;
+            this.CountryName = countryname;
+            this.SportCount = sportcount;
+            this.MedalCount = medalcount;
         }
         public string GetInformation()
         {
             string information;
-            information = "Ім`я: " + this.name + "; Вік: " + this.age.ToString() + ";Професія: " +this.proffesion;
+            information = "Ім`я Країни: " + this.CountryName + "; Кількість спортсменів: " + this.SportCount.ToString() + "; Кількість медалей: " + this.MedalCount;
             return information;
         }
     }
